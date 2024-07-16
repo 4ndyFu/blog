@@ -1,0 +1,76 @@
+[root@iZ2ze5xpmu533jd8ssq50nZ mydata]# /root/xtrabackup/bin/xtrabackup --prepare  --target-dir=/data/mydata
+[root@iZ2ze5xpmu533jd8ssq50nZ mydata]# xtrabackup --prepare  --target-dir=/data/mydata
+2024-07-16T17:21:52.420839+08:00 0 [Note] [MY-011825] [Xtrabackup] recognized server arguments: --innodb_checksum_algorithm=crc32 --innodb_log_checksums=1 --innodb_data_file_path=ibdata1:12M:autoextend --innodb_log_file_size=536870912 --innodb_page_size=16384 --innodb_undo_directory=/usr/local/mysql/data --innodb_undo_tablespaces=2 --server-id=1 --innodb_log_checksums=ON --innodb_redo_log_encrypt=0 --innodb_undo_log_encrypt=0 
+2024-07-16T17:21:52.420980+08:00 0 [Note] [MY-011825] [Xtrabackup] recognized client arguments: --prepare=1 --target-dir=/data/mydata 
+xtrabackup version 8.0.35-31 based on MySQL server 8.0.35 Linux (x86_64) (revision id: 55ec21d7)
+2024-07-16T17:21:52.421008+08:00 0 [Note] [MY-011825] [Xtrabackup] cd to /data/mydata/
+2024-07-16T17:21:52.421075+08:00 0 [Note] [MY-011825] [Xtrabackup] This target seems to be not prepared yet.
+2024-07-16T17:21:52.431892+08:00 0 [Note] [MY-011825] [Xtrabackup] xtrabackup_logfile detected: size=8388608, start_lsn=(30910855)
+2024-07-16T17:21:52.433017+08:00 0 [Note] [MY-011825] [Xtrabackup] using the following InnoDB configuration for recovery:
+2024-07-16T17:21:52.433036+08:00 0 [Note] [MY-011825] [Xtrabackup] innodb_data_home_dir = .
+2024-07-16T17:21:52.433043+08:00 0 [Note] [MY-011825] [Xtrabackup] innodb_data_file_path = ibdata1:12M:autoextend
+2024-07-16T17:21:52.433073+08:00 0 [Note] [MY-011825] [Xtrabackup] innodb_log_group_home_dir = .
+2024-07-16T17:21:52.433080+08:00 0 [Note] [MY-011825] [Xtrabackup] innodb_log_files_in_group = 1
+2024-07-16T17:21:52.433089+08:00 0 [Note] [MY-011825] [Xtrabackup] innodb_log_file_size = 8388608
+2024-07-16T17:21:52.433348+08:00 0 [Note] [MY-011825] [Xtrabackup] inititialize_service_handles suceeded
+2024-07-16T17:21:52.433521+08:00 0 [Note] [MY-011825] [Xtrabackup] using the following InnoDB configuration for recovery:
+2024-07-16T17:21:52.433533+08:00 0 [Note] [MY-011825] [Xtrabackup] innodb_data_home_dir = .
+2024-07-16T17:21:52.433539+08:00 0 [Note] [MY-011825] [Xtrabackup] innodb_data_file_path = ibdata1:12M:autoextend
+2024-07-16T17:21:52.433551+08:00 0 [Note] [MY-011825] [Xtrabackup] innodb_log_group_home_dir = .
+2024-07-16T17:21:52.433558+08:00 0 [Note] [MY-011825] [Xtrabackup] innodb_log_files_in_group = 1
+2024-07-16T17:21:52.433564+08:00 0 [Note] [MY-011825] [Xtrabackup] innodb_log_file_size = 8388608
+2024-07-16T17:21:52.433573+08:00 0 [Note] [MY-011825] [Xtrabackup] Starting InnoDB instance for recovery.
+2024-07-16T17:21:52.433580+08:00 0 [Note] [MY-011825] [Xtrabackup] Using 104857600 bytes for buffer pool (set by --use-memory parameter)
+2024-07-16T17:21:52.433617+08:00 0 [Note] [MY-012932] [InnoDB] PUNCH HOLE support available
+2024-07-16T17:21:52.433634+08:00 0 [Note] [MY-012944] [InnoDB] Uses event mutexes
+2024-07-16T17:21:52.433642+08:00 0 [Note] [MY-012945] [InnoDB] GCC builtin __atomic_thread_fence() is used for memory barrier
+2024-07-16T17:21:52.433654+08:00 0 [Note] [MY-012948] [InnoDB] Compressed tables use zlib 1.2.13
+2024-07-16T17:21:52.433848+08:00 0 [Note] [MY-012951] [InnoDB] Using hardware accelerated crc32 and polynomial multiplication.
+2024-07-16T17:21:52.434211+08:00 0 [Note] [MY-012203] [InnoDB] Directories to scan './'
+2024-07-16T17:21:52.434252+08:00 0 [Note] [MY-012204] [InnoDB] Scanning './'
+2024-07-16T17:21:52.446659+08:00 0 [Note] [MY-012208] [InnoDB] Completed space ID check of 31 files.
+2024-07-16T17:21:52.447128+08:00 0 [Note] [MY-012955] [InnoDB] Initializing buffer pool, total size = 128.000000M, instances = 1, chunk size =128.000000M 
+2024-07-16T17:21:52.456005+08:00 0 [Note] [MY-012957] [InnoDB] Completed initialization of buffer pool
+2024-07-16T17:21:52.472812+08:00 0 [Note] [MY-011951] [InnoDB] page_cleaner coordinator priority: -20
+2024-07-16T17:21:52.474418+08:00 0 [Note] [MY-011954] [InnoDB] page_cleaner worker priority: -20
+2024-07-16T17:21:52.474483+08:00 0 [Note] [MY-011954] [InnoDB] page_cleaner worker priority: -20
+2024-07-16T17:21:52.476428+08:00 0 [Note] [MY-011954] [InnoDB] page_cleaner worker priority: -20
+2024-07-16T17:21:52.555285+08:00 0 [Note] [MY-013883] [InnoDB] The latest found checkpoint is at lsn = 30910855 in redo log file ./#innodb_redo/#ib_redo0.
+2024-07-16T17:21:52.555357+08:00 0 [Note] [MY-012560] [InnoDB] The log sequence number 19869737 in the system tablespace does not match the log sequence number 30910855 in the redo log files!
+2024-07-16T17:21:52.555369+08:00 0 [Note] [MY-012551] [InnoDB] Database was not shutdown normally!
+2024-07-16T17:21:52.555406+08:00 0 [Note] [MY-012552] [InnoDB] Starting crash recovery.
+2024-07-16T17:21:52.555576+08:00 0 [Note] [MY-013086] [InnoDB] Starting to parse redo log at lsn = 30910541, whereas checkpoint_lsn = 30910855 and start_lsn = 30910464
+2024-07-16T17:21:52.555592+08:00 0 [Note] [MY-012550] [InnoDB] Doing recovery: scanned up to log sequence number 30914683
+2024-07-16T17:21:52.602717+08:00 0 [Note] [MY-013083] [InnoDB] Log background threads are being started...
+2024-07-16T17:21:52.606710+08:00 0 [Note] [MY-012532] [InnoDB] Applying a batch of 6 redo log records ...
+2024-07-16T17:21:52.609392+08:00 0 [Note] [MY-012533] [InnoDB] 100%
+2024-07-16T17:21:53.109510+08:00 0 [Note] [MY-012535] [InnoDB] Apply batch completed!
+2024-07-16T17:21:53.213841+08:00 0 [Note] [MY-013084] [InnoDB] Log background threads are being closed...
+2024-07-16T17:21:53.218237+08:00 0 [Note] [MY-013888] [InnoDB] Upgrading redo log: 1032M, LSN=30914683.
+2024-07-16T17:21:53.218297+08:00 0 [Note] [MY-012968] [InnoDB] Starting to delete and rewrite redo log files.
+2024-07-16T17:21:53.218342+08:00 0 [Note] [MY-011825] [InnoDB] Removing redo log file: ./#innodb_redo/#ib_redo0
+2024-07-16T17:21:53.303971+08:00 0 [Note] [MY-011825] [InnoDB] Creating redo log file at ./#innodb_redo/#ib_redo0_tmp with file_id 0 with size 33554432 bytes
+2024-07-16T17:21:53.307558+08:00 0 [Note] [MY-011825] [InnoDB] Renaming redo log file from ./#innodb_redo/#ib_redo0_tmp to ./#innodb_redo/#ib_redo0
+2024-07-16T17:21:53.310836+08:00 0 [Note] [MY-012893] [InnoDB] New redo log files created, LSN=30915084
+2024-07-16T17:21:53.310912+08:00 0 [Note] [MY-013083] [InnoDB] Log background threads are being started...
+2024-07-16T17:21:53.355287+08:00 0 [Note] [MY-013252] [InnoDB] Using undo tablespace './undo_001'.
+2024-07-16T17:21:53.355409+08:00 0 [Note] [MY-013252] [InnoDB] Using undo tablespace './undo_002'.
+2024-07-16T17:21:53.355794+08:00 0 [Note] [MY-012910] [InnoDB] Opened 2 existing undo tablespaces.
+2024-07-16T17:21:53.355848+08:00 0 [Note] [MY-011980] [InnoDB] GTID recovery trx_no: 1644
+2024-07-16T17:21:53.361443+08:00 0 [Note] [MY-013776] [InnoDB] Parallel initialization of rseg complete
+2024-07-16T17:21:53.361478+08:00 0 [Note] [MY-013777] [InnoDB] Time taken to initialize rseg using 2 thread: 5633 ms.
+2024-07-16T17:21:53.361558+08:00 0 [Note] [MY-012923] [InnoDB] Creating shared tablespace for temporary tables
+2024-07-16T17:21:53.361596+08:00 0 [Note] [MY-012265] [InnoDB] Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2024-07-16T17:21:53.422025+08:00 0 [Note] [MY-012266] [InnoDB] File './ibtmp1' size is now 12 MB.
+2024-07-16T17:21:53.422210+08:00 0 [Note] [MY-013627] [InnoDB] Scanning temp tablespace dir:'./#innodb_temp/'
+2024-07-16T17:21:53.445701+08:00 0 [Note] [MY-013018] [InnoDB] Created 128 and tracked 128 new rollback segment(s) in the temporary tablespace. 128 are now active.
+2024-07-16T17:21:53.446080+08:00 0 [Note] [MY-012976] [InnoDB] 8.0.35 started; log sequence number 30915094
+2024-07-16T17:21:53.446935+08:00 0 [Warning] [MY-012091] [InnoDB] Allocated tablespace ID 1 for sys/sys_config, old maximum was 0
+2024-07-16T17:21:53.470825+08:00 0 [Note] [MY-011825] [Xtrabackup] Completed loading of 29 tablespaces into cache in 0.024671 seconds
+2024-07-16T17:21:53.498810+08:00 0 [Note] [MY-011825] [Xtrabackup] Time taken to build dictionary: 0.0279188 seconds
+2024-07-16T17:21:53.501711+08:00 0 [Note] [MY-011825] [Xtrabackup] starting shutdown with innodb_fast_shutdown = 1
+2024-07-16T17:21:53.501783+08:00 0 [Note] [MY-012330] [InnoDB] FTS optimize thread exiting.
+2024-07-16T17:21:54.499457+08:00 0 [Note] [MY-013072] [InnoDB] Starting shutdown...
+2024-07-16T17:21:54.603062+08:00 0 [Note] [MY-013084] [InnoDB] Log background threads are being closed...
+2024-07-16T17:21:54.621923+08:00 0 [Note] [MY-012980] [InnoDB] Shutdown completed; log sequence number 30915094
+2024-07-16T17:21:54.623664+08:00 0 [Note] [MY-011825] [Xtrabackup] completed OK!
